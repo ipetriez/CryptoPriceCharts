@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		70C00AE72992D91B00028DB1 /* CryptoPriceChartsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C00AE62992D91B00028DB1 /* CryptoPriceChartsApp.swift */; };
-		70C00AE92992D91B00028DB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C00AE82992D91B00028DB1 /* ContentView.swift */; };
 		70C00AEB2992D91D00028DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C00AEA2992D91D00028DB1 /* Assets.xcassets */; };
 		70C00AEE2992D91D00028DB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C00AED2992D91D00028DB1 /* Preview Assets.xcassets */; };
 		70C00AF82992D91D00028DB1 /* CryptoPriceChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C00AF72992D91D00028DB1 /* CryptoPriceChartsTests.swift */; };
 		70C00B022992D91D00028DB1 /* CryptoPriceChartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C00B012992D91D00028DB1 /* CryptoPriceChartsUITests.swift */; };
 		70C00B042992D91D00028DB1 /* CryptoPriceChartsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C00B032992D91D00028DB1 /* CryptoPriceChartsUITestsLaunchTests.swift */; };
+		70C00B112992D9C300028DB1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C00B102992D9C300028DB1 /* HomeView.swift */; };
+		70C00B132992DAC600028DB1 /* TopMoversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C00B122992DAC600028DB1 /* TopMoversView.swift */; };
+		70C00B152992DAD500028DB1 /* TopMoversItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C00B142992DAD500028DB1 /* TopMoversItemView.swift */; };
+		70C00B172992DEEF00028DB1 /* AllCoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C00B162992DEEF00028DB1 /* AllCoinsView.swift */; };
+		70C00B192992DF0800028DB1 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C00B182992DF0800028DB1 /* CoinRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		70C00AE32992D91B00028DB1 /* CryptoPriceCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoPriceCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C00AE62992D91B00028DB1 /* CryptoPriceChartsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPriceChartsApp.swift; sourceTree = "<group>"; };
-		70C00AE82992D91B00028DB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		70C00AEA2992D91D00028DB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70C00AED2992D91D00028DB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		70C00AF32992D91D00028DB1 /* CryptoPriceChartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoPriceChartsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,11 @@
 		70C00AFD2992D91D00028DB1 /* CryptoPriceChartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoPriceChartsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C00B012992D91D00028DB1 /* CryptoPriceChartsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPriceChartsUITests.swift; sourceTree = "<group>"; };
 		70C00B032992D91D00028DB1 /* CryptoPriceChartsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPriceChartsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		70C00B102992D9C300028DB1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		70C00B122992DAC600028DB1 /* TopMoversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversView.swift; sourceTree = "<group>"; };
+		70C00B142992DAD500028DB1 /* TopMoversItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversItemView.swift; sourceTree = "<group>"; };
+		70C00B162992DEEF00028DB1 /* AllCoinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoinsView.swift; sourceTree = "<group>"; };
+		70C00B182992DF0800028DB1 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				70C00AE62992D91B00028DB1 /* CryptoPriceChartsApp.swift */,
-				70C00AE82992D91B00028DB1 /* ContentView.swift */,
+				70C00B102992D9C300028DB1 /* HomeView.swift */,
+				70C00B162992DEEF00028DB1 /* AllCoinsView.swift */,
+				70C00B182992DF0800028DB1 /* CoinRowView.swift */,
+				70C00B122992DAC600028DB1 /* TopMoversView.swift */,
+				70C00B142992DAD500028DB1 /* TopMoversItemView.swift */,
 				70C00AEA2992D91D00028DB1 /* Assets.xcassets */,
 				70C00AEC2992D91D00028DB1 /* Preview Content */,
 			);
@@ -257,8 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70C00AE92992D91B00028DB1 /* ContentView.swift in Sources */,
+				70C00B192992DF0800028DB1 /* CoinRowView.swift in Sources */,
+				70C00B112992D9C300028DB1 /* HomeView.swift in Sources */,
+				70C00B132992DAC600028DB1 /* TopMoversView.swift in Sources */,
+				70C00B172992DEEF00028DB1 /* AllCoinsView.swift in Sources */,
 				70C00AE72992D91B00028DB1 /* CryptoPriceChartsApp.swift in Sources */,
+				70C00B152992DAD500028DB1 /* TopMoversItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
