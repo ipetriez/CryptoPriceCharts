@@ -10,7 +10,9 @@ import Foundation
 struct Coin: Codable, Identifiable {
     let id, symbol, name: String?
     let image: String?
-    let currentPrice, marketCap, marketCapRank, fullyDilutedValuation: Double?
+    let marketCapRank: Int
+    let currentPrice, marketCap: Double
+    let fullyDilutedValuation: Double?
     let totalVolume, high24H, low24H: Double?
     let priceChange24H, priceChangePercentage24H: Double?
     let marketCapChange24H: Double?
