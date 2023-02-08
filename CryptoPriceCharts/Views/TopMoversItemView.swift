@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TopMoversItemView: View {
+    let coin: Coin
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             Image(systemName: "bitcoinsign.circle.fill")
@@ -17,17 +19,17 @@ struct TopMoversItemView: View {
                 .padding(.bottom, 8)
             
             HStack(spacing: 2) {
-                Text("BTC")
+                Text(coin.symbol?.uppercased() ?? "")
                     .font(.caption)
                     .fontWeight(.bold)
                 
-                Text("20,300.00")
+                Text("\(coin.currentPrice ?? 0)")
                     .font(.caption)
                     .fontWeight(.bold)
                     .foregroundColor(.gray)
             }
             
-            Text("+ 5.6%")
+            Text("\(coin.priceChangePercentage24H ?? 0)%")
                 .font(.title2)
                 .foregroundColor(.green)
         }
@@ -38,6 +40,6 @@ struct TopMoversItemView: View {
 
 struct TopMoversItemView_Previews: PreviewProvider {
     static var previews: some View {
-        TopMoversItemView()
+        TopMoversItemView(coin: Coin(id: nil, symbol: nil, name: nil, image: nil, currentPrice: nil, marketCap: nil, marketCapRank: nil, fullyDilutedValuation: nil, totalVolume: nil, high24H: nil, low24H: nil, priceChange24H: nil, priceChangePercentage24H: nil, marketCapChange24H: nil, marketCapChangePercentage24H: nil, circulatingSupply: nil, totalSupply: nil, maxSupply: nil, ath: nil, athChangePercentage: nil, athDate: nil, atl: nil, atlChangePercentage: nil, atlDate: nil, lastUpdated: nil, sparklineIn7D: nil, priceChangePercentage24HInCurrency: nil))
     }
 }

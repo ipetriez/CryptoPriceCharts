@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct CoinRowView: View {
+    let coin: Coin
+    
     var body: some View {
         HStack {
-            Text("1")
+            Text("\(coin.marketCapRank ?? 0)")
                 .font(.caption)
             
             Image(systemName: "bitcoinsign.circle.fill")
@@ -21,12 +23,12 @@ struct CoinRowView: View {
                 .padding(.bottom, 8)
             
             VStack(alignment: .leading, spacing: 4) {
-                Text("Bitcoin")
+                Text(coin.name ?? "")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .padding(.leading, 4)
                 
-                Text("BTC")
+                Text(coin.symbol?.uppercased() ?? "")
                     .font(.caption)
                     .padding(.leading, 6)
             }
@@ -35,12 +37,12 @@ struct CoinRowView: View {
             Spacer()
             
             VStack(alignment: .trailing, spacing: 4) {
-                Text("$20,300.00")
+                Text("\(coin.currentPrice ?? 0)")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .padding(.trailing, 4)
                 
-                Text("+ 5.6%")
+                Text("\(coin.priceChangePercentage24H ?? 0)%")
                     .font(.caption)
                     .padding(.trailing, 6)
             }
@@ -52,6 +54,6 @@ struct CoinRowView: View {
 
 struct CoinRowView_Previews: PreviewProvider {
     static var previews: some View {
-        CoinRowView()
+        CoinRowView(coin: Coin(id: nil, symbol: nil, name: nil, image: nil, currentPrice: nil, marketCap: nil, marketCapRank: nil, fullyDilutedValuation: nil, totalVolume: nil, high24H: nil, low24H: nil, priceChange24H: nil, priceChangePercentage24H: nil, marketCapChange24H: nil, marketCapChangePercentage24H: nil, circulatingSupply: nil, totalSupply: nil, maxSupply: nil, ath: nil, athChangePercentage: nil, athDate: nil, atl: nil, atlChangePercentage: nil, atlDate: nil, lastUpdated: nil, sparklineIn7D: nil, priceChangePercentage24HInCurrency: nil))
     }
 }
